@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSP UAJY</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Cabin:700" rel="stylesheet"> 
+
+    <!-- smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- JS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+
+      });
+    </script>
+
+    <!-- smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+
+  </head>
+  <body>
+    
+
+    <section id="header" class="hero is-fullheight">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+              <img src="./images/logo_ksp.png" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item hov" href="#about">
+                Tentang KSP
+              </a>
+        
+              <a class="navbar-item hov" href="#belajar">
+                Bahasa
+              </a>
+        
+              <a class="navbar-item hov" href="#manfaat">
+                Manfaat
+              </a>
+
+              <a class="navbar-item hov" href="#acara">
+                Acara
+              </a>
+
+              <a class="navbar-item hov" href="#contact">
+                More
+              </a>
+            <!-- </div>
+        
+            <div class="navbar-end"> -->
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary" href="http://ksp.himaforka-uajy.org/pendaftaran">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-dark" href="">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-body">
+        <div class="container">
+          <img class="is-flex logo-header" src="images/logo_ksp.png">
+          <div class="gradasi-text has-text-centered">
+            <h1 class="b">
+              <span class="initial">K</span>elompok 
+              <span class="initial">S</span>tudi 
+              <span class="initial">P</span>emrograman</h1>
+            <h3 class="a">K S P - U A J Y</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4">
+            <img src="images/learn.jpeg">
+          </div>
+          <div class="column is-6">
+            <h2 class="title is-2">Sekilas tentang KSP</h2>
+            <p class="subtitle is-5 has-text-justified">
+              Kelompok Studi Pemrograman, atau yang biasa disingkat KSP, 
+              adalah kelompok studi yang mempelajari tentang bahasa pemrograman,
+              algoritma pemrograman, dan cara membuat program.<br>
+              KSP berdiri di bawah naungan <a href="https://himaforka-uajy.org/" target="_blank">Himaforka UAJY</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="belajar" class="section is-medium">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-9">
+            <h2 class="title is-2 has-text-centered">Bahasa Yang Dipelajari di KSP</h2>
+            <div class="box-belajar">
+              <div class="columns">
+                <div class="column is-one-fifth">
+                  <div class="is-flex is-horizontal-center" style="justify-content: center;">
+                    <figure class="image is-128x128">
+                      <img src="images/c.png">
+                    </figure>
+                  </div>
+                </div>
+                <div class="column is-four-fifths">
+                  <h3 class="title is-3">Bahasa C</h3>
+                  <p class="subtitle is-5" style="text-indent: 2.5em;">
+                    Bahasa C adalah bahasa pemrograman dengan konsep prosedural. Artinya, kode program dijalankan urut dari atas ke bawah dan dari kiri ke kanan.
+                    Bahasa ini cocok dipelajari bagi kalian yang belum pernah <em>coding</em> sama sekali. Karena bahasa C adalah "induk" dari bahasa pemrograman modern.<br>
+                    <em>Tool</em> yang digunakan adalah Dev-C++.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="box-belajar">
+              <div class="columns">
+                <div class="column is-one-fifth">
+                  <div class="is-flex is-horizontal-center" style="justify-content: center;">
+                    <figure class="image is-128x128">
+                      <img src="images/java.png">
+                    </figure>
+                  </div>
+                </div>
+                <div class="column is-four-fifths">
+                  <h3 class="title">Bahasa Java</h3>
+                  <p class="subtitle is-5" style="text-indent: 2.5em;">
+                    Bahasa Java adalah bahasa pemrograman yang konsepnya berorientasi objek. Objek memiliki atribut (data) dan <em>method</em> (prosedur dan fungsi).
+                    Program yang berorientasi objek dapat membuat program lebih fleksibel (mudah diubah / dikembangkan) sehingga cocok untuk program skala besar.<br>
+                    <em>Tool</em> yang digunakan adalah NetBeans.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <img class="maskot" style="position: relative; top: 100px; width: 100%;" src="./images/girl.png">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="acara" class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <img class="maskot" style="width: 100%;" src="images/boy.png">
+          </div>
+
+          <div class="column is-6">
+            <h2 class="title is-2" style="margin-bottom: 70px;">Acara Rutin KSP</h2>
+            <div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">
+              <div class='carousel-container'>
+                <div class='carousel-item has-background is-active'>
+                  <img class="is-background" src="images/acara-tentoring.jpg" width="640" height="310" />
+                  <div class="title">
+                    Tentoring rutin setiap minggu yang didampingi tentor-tentor yang pastinya 
+                    menguasai bahasa pemrograman yang diajarkan.
+                  </div>
+                </div>
+                <div class='carousel-item has-background'>
+                  <img class="is-background" src="images/acara-pnc.jpg" width="640" height="310" />
+                  <div class="title">
+                    Programming in Contest (PnC) merupakan lomba tahunan dimana mahasiswa baru 
+                    TF UAJY bersaing untuk membuat program menggunakan bahasa C dalam kurun waktu 
+                    yang ditentukan. Selengkapnya kunjungi <a href="https://ksp.himaforka-uajy.org/pnc/">website PnC</a>.
+                  </div>
+                </div>
+                <div class='carousel-item has-background'>
+                  <img class="is-background" src="images/acara-makrab.jpg" width="640" height="310" />
+                  <div class="title">Malam Keakraban (Makrab) yang diadakan setiap awal tahun 
+                    guna mempererat hubungan antara tentor dan mahasiswa baru.</div>
+                </div>
+              </div>
+              <div class="carousel-navigation is-overlay">
+                <div class="carousel-nav-left">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-nav-right">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="manfaat" class="section is-medium">
+      <div class="container has-text-centered">
+        <h2 class="title is-2" style="margin-bottom: 70px;">Manfaat Ikut KSP</h2>
+
+        <div class="columns">
+          <div class="column">
+            <div class="manfaatnya">
+              <i class="fas fa-3x fa-chalkboard-teacher"></i>
+              <h6 class="title is-4" style="padding: 20px 0;">Tentor Kelompok</h6>
+              <p class="subtitle is-6 desc-manfaat has-text-justified">
+                Para peserta KSP dibagi menjadi beberapa kelompok yang terdiri atas 3-4 mahasiswa. 
+                Tiap kelompok akan memiliki 1 tentor pembimbing. Pembagian tersebut bertujuan untuk 
+                mempermudah peserta KSP diperbolehkan bertanya pada saat tentoring. Di luar jam tentoring, 
+                peserta KSP juga bisa bertanya atau menemui tentornya jika ingin bertanya tentang materi 
+                yang masih belum dimengerti.
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="manfaatnya">
+              <i class="fas fa-3x fa-puzzle-piece"></i>
+              <h6 class="title is-4" style="padding: 20px 0;">Latihan Soal</h6>
+              <p class="subtitle is-6 desc-manfaat has-text-justified">
+                Setiap tentoring, pembawa materi akan menerangkan materi. Setelah itu, peserta akan diberikan 
+                soal-soal latihan yang berkaitan dengan materi. Apabila mendapat kesulitan, peserta dapat 
+                bertanya kepada tentornya. Soal-soal dan kunci jawaban bisa diakses peserta KSP melalui 
+                website agar bisa diakses peserta saat ingin belajar kembali.
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="manfaatnya">
+              <i class="fas fa-3x fa-tachometer-alt"></i>
+              <h6 class="title is-4" style="padding: 20px 0;">Weekly Challenge</h6>
+              <p class="subtitle is-6 desc-manfaat has-text-justified">
+                Setiap hari Sabtu, KSP akan memberikan <em>weekly challenge</em> yang bersifat individu. 
+                Challenge tersebut berakhir pada hari Minggu setelahnya. Setelah <em>challenge</em> dikumpulkan, 
+                para tentor akan menilai algoritma, originalitas, kerapian, dan kreativitas peserta KSP dalam 
+                memecahkan <em>challenge</em> lalu memberikan poin yang sesuai. Pada akhir semester, akan ada 
+                hadiah menarik bagi 3 peserta yang memiliki poin terbesar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="daftar" class="has-text-centered">
+      <div class="columns">
+
+        <div class="column" style="background-color: #30e3ca;">
+          <h3 class="title is-3">Ayo daftarkan dirimu</h3>
+          <p class="subtitle is-4"> dan belajar bersama KSP!</p>
+          <div class="is-flex" style="justify-content: center;">
+            <button class="button-daftar">
+              <a href="http://ksp.himaforka-uajy.org/pendaftaran">
+                Daftar
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div class="column" style="background-color: #11386b;">
+          <h3 class="title is-3" style="color: #fff;">Sudah mendaftar?</h3>
+          <p class="subtitle is-4" style="color: #fff;">Yuk cek akunmu!</p>
+          <div class="is-flex" style="justify-content: center;">
+            <button class="button-login">
+              <a href="http://ksp.himaforka-uajy.org/login">
+                Log in
+              </a>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="hero section is-dark has-text-centered">
+      <div class="container" style="margin-top: 50px;">
+        <div class="columns">
+
+          <div class="column">
+            <h3 class="title is-3">For more info</h3>
+
+            <div class="columns is-gapless is-centered">
+              <div class="cp">
+                <div class="column is-one-third is-flex" style="justify-content: center;">
+                  <figure class="image is-64x64">
+                    <img style="padding: 0;" class="is-rounded" src="images/751.jpg">
+                  </figure>
+                </div>
+                <div class="column is-two-thirds has-text-left">
+                  <h5 class="title is-5">Johanes Wiku Sakti</h5>
+                    <p class="subtitle is-6">
+                      <i class="fas fa-phone"></i>
+                        0822-8013-1707
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns is-gapless is-centered">
+              <div class="cp">
+                <div class="column is-one-third is-flex" style="justify-content: center;">
+                  <figure class="image is-64x64">
+                    <img style="padding: 0;" class="is-rounded" src="images/751.jpg">
+                  </figure>
+                </div>
+                <!-- <div class="column is-two-thirds has-text-left">
+                  <h5 class="title is-5">Dila Damayanti</h5>
+                    <p class="subtitle is-6">
+                      <i class="fas fa-phone"></i>
+                        08xxxxxxxx
+                    </p>
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="column">
+            <h3 class="title is-3">More about us</h3>
+
+            <div class="more">
+              <div class="socmed">
+                <a href="https://www.instagram.com/kspuajy/" target="_blank">
+                  <span class="icon is-medium" style="color:#dd06d2;">
+                    <i class="fas fa-lg fab fa-instagram"></i>
+                  </span>
+                  <!-- <span>@kspuajy</span> -->
+                </a>
+              </div>
+              <div class="socmed">
+                <a href="http://line.me/ti/p/~@qls2955v" target="_blank">
+                  <span class="icon has-text-success is-medium" style="color: #00b900;">
+                    <i class="fas fa-lg fab fa-line"></i>
+                  </span>
+                  <!-- <span>@qls2955v</span> -->
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="background-color: #283148;"> 
+      <p style="color: #fff;" class="has-text-centered">© 2019 Kominfo KSP</p>
+    </footer>
+
+    
+    <script type="text/javascript" src="https://wikiki.github.io/node_modules/bulma-extensions/bulma-carousel/dist/js/bulma-carousel.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var carousels = bulmaCarousel.attach();
+      }, false);
+    </script>
+
+  </body>
+</html>
